@@ -14,11 +14,11 @@
     <p>
         What needs to be done?
         <input type="text" id="todoInput" title="What should be added to the todo list?" />
-        <input type="button" value="Add todo" />
+        <input type="button" value="Add todo" onclick="addTodo" />
     </p>
 
     <h2>Current todo list</h2>
-    <p>Filter: <input type="text" id="todoFilter" title="Filter for the todo list" /> </p>
+    <p>Filter: <input type="text" id="todoFilter" title="Filter for the todo list" onkeyup="filterTodoList" /> </p>
 
     <div id="todoListContainer">Nothing to do, hurray!</div>
     <script type="text/javascript" src="todo-it.js"></script>
